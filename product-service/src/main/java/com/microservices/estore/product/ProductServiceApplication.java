@@ -1,4 +1,4 @@
-package com.microservices.estore.product_service;
+package com.microservices.estore.product;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
