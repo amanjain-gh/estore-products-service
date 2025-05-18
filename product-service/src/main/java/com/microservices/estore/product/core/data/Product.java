@@ -1,4 +1,4 @@
-package com.microservices.estore.product.entity;
+package com.microservices.estore.product.core.data;
 
 import jakarta.persistence.*;
 import lombok.Data;

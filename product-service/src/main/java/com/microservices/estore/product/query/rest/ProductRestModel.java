@@ -1,11 +1,11 @@
-package com.microservices.estore.product.events;
+package com.microservices.estore.product.query.rest;
 
 import lombok.Data;
 
 import java.math.BigDecimal;
 
 @Data
-public class ProductCreatedEvent {
+public class ProductRestModel {
 
     private String productId;
 

@@ -1,10 +1,9 @@
 package com.microservices.estore.product.query;
 
-import com.microservices.estore.product.entity.Product;
-import com.microservices.estore.product.events.ProductCreatedEvent;
-import com.microservices.estore.product.repository.ProductRepository;
+import com.microservices.estore.product.core.data.Product;
+import com.microservices.estore.product.core.events.ProductCreatedEvent;
+import com.microservices.estore.product.core.repository.ProductRepository;
 import org.axonframework.eventhandling.EventHandler;
-import org.axonframework.eventsourcing.EventSourcingHandler;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Component;
 

@@ -1,7 +1,7 @@
-package com.microservices.estore.product.controller.command;
+package com.microservices.estore.product.command.rest;
 
 import com.microservices.estore.product.command.CreateProductCommand;
-import com.microservices.estore.product.model.ProductModel;
+import com.microservices.estore.product.core.data.ProductModel;
 import org.axonframework.commandhandling.gateway.CommandGateway;
 import org.springframework.core.env.Environment;
 import org.springframework.web.bind.annotation.*;
@@ -19,11 +19,6 @@ public class ProductCommandController {
     public ProductCommandController(Environment environment, CommandGateway commandGateway) {
         this.environment = environment;
         this.commandGateway = commandGateway;
-    }
-
-    @GetMapping
-    public String getProduct() {
-        return "No products available yet " + environment.getProperty("local.server.port");
     }
 
     @PostMapping

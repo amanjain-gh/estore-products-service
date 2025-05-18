@@ -1,6 +1,6 @@
-package com.microservices.estore.product.repository;
+package com.microservices.estore.product.core.repository;
 
-import com.microservices.estore.product.entity.Product;
+import com.microservices.estore.product.core.data.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface ProductRepository extends JpaRepository<Product, String> {
